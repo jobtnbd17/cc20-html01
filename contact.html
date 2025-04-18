@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+    form{
+      border: 1px solid black;
+      padding: 32px;
+      width: 600px;
+      border-radius: 10px;
+    }
+    input, select, textarea{
+      width: 100%;
+      margin-bottom: 18px;
+      font-size: 24px;
+      padding: 8px;
+      border: 1px solid silver;
+      border-radius: 8px;
+    }
+    .group{
+    width: auto;
+    display: inline-block;
+    font-size: 12px;
+    }
+   
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="./index.html">Home</a> |
+    <a href="./education.html">Education</a> |
+    <a href="./work.html">Work</a> |
+    <a href="javascript:">Contrac</a> |
+  </nav>
+  <h1>Contact Me</h1>
+  <form method="post">
+    <label for="name">Your name
+      <input type="text" name="name" id="name">
+    </label>
+    <label for="email">Your E-mail
+      <input type="email" name="email" id="email">
+    </label>
+    <label for="gender" id="gender">Gender</label>
+    <select name="gender" id="gender">
+      <option disabled selected>select...</option>
+      <option>Male</option>
+      <option>female</option>
+      <option>Other</option>
+    </select>
+    <label for="note">Message</label>
+    <textarea name="note" id="note" rows="4"></textarea>
+   <div>
+    <input class="group" type="submit" value="Send">
+    <input class="group" type="reset" value="Clear">
+  </div>
+  </form>
+
+
+</body>
+
+</html>
